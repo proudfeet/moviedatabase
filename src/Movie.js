@@ -1,5 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
+import styled from  'styled-components';
+import Overdrive from 'react-overdrive';
 
 // *********
 // Before converting to a functional stateless component
@@ -51,23 +54,29 @@ import PropTypes from 'prop-types';
 //   }
 // }
 
+const POSTER_PATH = 'http://image.tmdb.org/t/p/w154';
 // Again, because this only returns the Movie component, we're going to define Movie as a function that implicitly returns the markup for the movie
 // The prop from the parent component is passed in as `movie` (and destructured using the {} syntax) and then used to populate the Movie component
-const POSTER_PATH = 'http://image.tmdb.org/t/p/w154';
-
 const Movie = ({ movie }) => (
-  <div>
-    <img src={`${POSTER_PATH}${movie.poster_path}`} />
-    <h3>{movie.title}</h3>
-  </div>
+  // Using the movie.id prop allows us to dynamically link to each movie
+  <Link to={`${movie.id}`}>
+    {/* Overdrive is React component installed from NPM, it requires a unique ID on the components that you are transitioning in both states (i.e. beginning and finished state) */}
+    <Overdrive id={movie.id}>
+      <Poster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title}/>
+    </Overdrive>
+  </Link>
 );
 
 // We have this line down here (after the function definition) because in JavaScript, we cannot export a function definition
 export default Movie;
-
 
 Movie.propTypes = {
   movie: PropTypes.shape({
     title: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+// This is an example of a styled component, where the CSS is written in the JS for the component
+export const Poster = styled.img`
+  box-shadow: 0 0 35px black;
+`;
