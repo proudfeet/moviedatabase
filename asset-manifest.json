@@ -1,13 +1,13 @@
 {
   "main.css": "/moviedatabase/static/css/main.b61ff13c.chunk.css",
-  "main.js": "/moviedatabase/static/js/main.80ae7264.chunk.js",
-  "main.js.map": "/moviedatabase/static/js/main.80ae7264.chunk.js.map",
+  "main.js": "/moviedatabase/static/js/main.05a81221.chunk.js",
+  "main.js.map": "/moviedatabase/static/js/main.05a81221.chunk.js.map",
   "runtime~main.js": "/moviedatabase/static/js/runtime~main.32025ff4.js",
   "runtime~main.js.map": "/moviedatabase/static/js/runtime~main.32025ff4.js.map",
-  "static/js/2.fcc2e7af.chunk.js": "/moviedatabase/static/js/2.fcc2e7af.chunk.js",
-  "static/js/2.fcc2e7af.chunk.js.map": "/moviedatabase/static/js/2.fcc2e7af.chunk.js.map",
+  "static/js/2.941bd6eb.chunk.js": "/moviedatabase/static/js/2.941bd6eb.chunk.js",
+  "static/js/2.941bd6eb.chunk.js.map": "/moviedatabase/static/js/2.941bd6eb.chunk.js.map",
   "index.html": "/moviedatabase/index.html",
-  "precache-manifest.a4104449af70c79f5a43b08cc3b4739d.js": "/moviedatabase/precache-manifest.a4104449af70c79f5a43b08cc3b4739d.js",
+  "precache-manifest.8dca294182ba9c7d3e575dc890677a60.js": "/moviedatabase/precache-manifest.8dca294182ba9c7d3e575dc890677a60.js",
   "service-worker.js": "/moviedatabase/service-worker.js",
   "static/css/main.b61ff13c.chunk.css.map": "/moviedatabase/static/css/main.b61ff13c.chunk.css.map",
   "static/media/logo.svg": "/moviedatabase/static/media/logo.ff9a163f.svg"
