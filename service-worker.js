@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "proudfeet.github.io/moviedatabase/precache-manifest.9b5c6a2756a5502a83c348221db0717b.js"
+  "/moviedatabase/precache-manifest.a4104449af70c79f5a43b08cc3b4739d.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("proudfeet.github.io/moviedatabase/index.html", {
+workbox.routing.registerNavigationRoute("/moviedatabase/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
